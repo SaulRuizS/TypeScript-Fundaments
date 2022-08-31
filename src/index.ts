@@ -25,4 +25,17 @@
   size = 'L';
   //size = 's'; The type is case sensitive, so this results in error.
   size = 'S';
+
+  //Objects as Types
+  type product = {
+    title: string,
+    size: Sizes,
+    stock?: number, //The ? makes the value optional
+  }
+
+  let blueShirt: product = {
+    title: 'Blue Shirt',
+    size: 'M',
+    // stock: 9,
+  }
 })();
